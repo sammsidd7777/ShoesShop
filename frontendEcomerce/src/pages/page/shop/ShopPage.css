@@ -1,0 +1,96 @@
+/* FILTER BAR */
+.shop-filters {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.shop-filters select,
+.shop-filters button {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.clear-filter {
+  background: #111;
+  color: #fff;
+  border: none;
+}
+
+.clear-filter:hover {
+  background: #000;
+}
+/* SHOP GRID */
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* PRODUCT CARD */
+.shop-card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shop-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* IMAGE */
+.shop-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+/* CARD BODY */
+.shop-card-body {
+  padding: 1.2rem;
+}
+
+.shop-card-body h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.6rem;
+  color: #111;
+}
+
+/* FOOTER */
+.shop-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* ACTION ICONS */
+.shop-actions {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.shop-actions i {
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #444;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.shop-actions i:hover {
+  color: #000;
+  transform: scale(1.1);
+}

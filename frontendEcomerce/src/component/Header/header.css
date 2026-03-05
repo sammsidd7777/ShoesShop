@@ -1,0 +1,117 @@
+/* ===============================
+   HEADER WRAPPER
+================================ */
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Spacer to avoid content overlap */
+.header-before {
+  height: 80px;
+}
+
+/* ===============================
+   GLASS NAV CONTAINER
+================================ */
+.glass-nav {
+  max-width: 1200px;
+  margin: 14px auto;
+  padding: 14px 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* ===============================
+   LOGO
+================================ */
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.logo .gold {
+  color: #d4af37;
+}
+
+/* ===============================
+   NAV LINKS
+================================ */
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b5b5b5;
+  transition: color 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+/* ===============================
+   HEADER ACTIONS
+================================ */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.header-actions a {
+  font-size: 18px;
+  color: #ffffff;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.header-actions a:hover {
+  transform: translateY(-2px);
+  color: #d4af37;
+}
+
+/* ===============================
+   CART DOT
+================================ */
+.cart-btn {
+  position: relative;
+}
+
+.cart-dot {
+  position: absolute;
+  top: -4px;
+  right: -6px;
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 50%;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .glass-nav {
+    padding: 12px 20px;
+  }
+}

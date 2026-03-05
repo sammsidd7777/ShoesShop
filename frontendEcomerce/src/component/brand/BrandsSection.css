@@ -1,0 +1,47 @@
+.brands-section {
+  padding: 60px 0;
+  background: #0b0b0b;
+  overflow: hidden;
+}
+
+.brands-track {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  animation: scroll 18s linear infinite;
+}
+
+.brands-track img {
+  height: 60px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.brands-track img:hover {
+  filter: grayscale(0);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .brands-track {
+    gap: 40px;
+  }
+
+  .brands-track img {
+    height: 45px;
+  }
+}

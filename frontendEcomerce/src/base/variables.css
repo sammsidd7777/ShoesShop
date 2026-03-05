@@ -1,0 +1,13 @@
+:root {
+  --primary: #1152d4;
+  --sport-blue: #0066ff;
+  --gold: #c5a059;
+  --accent: #ff6a00;
+
+  --bg-dark: #0a0a0b;
+  --bg-soft: #0d0d0e;
+  --white: #ffffff;
+  --muted: rgba(255, 255, 255, 0.6);
+  --border: rgba(255, 255, 255, 0.1);
+  --glass: rgba(10, 10, 11, 0.6);
+}

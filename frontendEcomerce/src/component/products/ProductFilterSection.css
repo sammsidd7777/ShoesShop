@@ -1,0 +1,94 @@
+/* FILTER BUTTONS */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 40px 0;
+}
+
+.filter-buttons button {
+  padding: 10px 22px;
+  border-radius: 30px;
+  border: 1px solid #333;
+  background: transparent;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-buttons button:hover {
+  background: #d4af37;
+  color: #000;
+}
+
+.filter-buttons .active {
+  background: #d4af37;
+  color: #000;
+  border-color: #d4af37;
+}
+
+/* PRODUCT GRID */
+.section-box {
+  padding: 0 6%;
+}
+
+.box-deal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+/* PRODUCT CARD */
+.card-section {
+  background: #111;
+  border-radius: 18px;
+  padding: 16px;
+  transition: all 0.3s ease;
+}
+
+.card-section:hover {
+  transform: translateY(-6px);
+}
+
+.card-section img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.card-section h2 {
+  font-size: 16px;
+  margin: 14px 0;
+  color: #fff;
+}
+
+/* PRICE & ICONS */
+.price-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-icon p {
+  font-weight: 700;
+  color: #d4af37;
+}
+
+.price-icon i {
+  cursor: pointer;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.price-icon i:hover {
+  color: #d4af37;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .section-box {
+    padding: 0 4%;
+  }
+}

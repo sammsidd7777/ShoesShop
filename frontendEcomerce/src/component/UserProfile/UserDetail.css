@@ -1,0 +1,102 @@
+/* PAGE LAYOUT */
+.profile {
+  display: flex;
+  min-height: calc(100vh - 80px);
+  background: #f7f7f7;
+  font-family: "Manrope", sans-serif;
+}
+
+/* RIGHT CONTENT */
+.user-info {
+  flex: 1;
+  padding: 3rem;
+  background: #f7f7f7;
+}
+
+/* TITLE */
+.user-info h1 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #111;
+}
+
+/* FORM CARD */
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* EACH ROW */
+.user-data {
+  background: #fff;
+  padding: 1.2rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* LABEL */
+.user-data label {
+  min-width: 160px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* INPUT */
+.user-data input {
+  flex: 1;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+
+.user-data input:disabled {
+  background: #f5f5f5;
+  color: #555;
+}
+
+/* GENDER */
+.user-data p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-data p label {
+  min-width: auto;
+  font-weight: 500;
+}
+
+.user-data p input {
+  width: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .profile {
+    flex-direction: column;
+  }
+
+  .user-info {
+    padding: 2rem 1.2rem;
+  }
+
+  .user-data {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user-data label {
+    min-width: auto;
+  }
+
+  .user-data p {
+    font-size: 0.9rem;
+  }
+}
