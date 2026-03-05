@@ -58,13 +58,13 @@ The application also includes an **Admin Panel** to manage products and users.
 ![Product Page](./assets/shoppage.png)
 
 ### Product Detail
-![Product Detail](./assets/productDetail.png
+![Product Detail](./assets/detail.png)
 
 ### User Login
 ![Product Detail](./assets/login.png)
 
 ### Cart
-![User Profile](./assets/Cart.png)
+![User Profile](./assets/cart.png)
 
 ### Payment
 ![User Profile](./assets/payment.png)
