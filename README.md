@@ -83,7 +83,7 @@ assets/ → Screenshots for README
 
 Clone the repository
 
-git clone https://github.com/yourusername/shoe-store.git
+git clone https://github.com/sammsidd7777/shoe-store.git
 
 ### Install Frontend
 
